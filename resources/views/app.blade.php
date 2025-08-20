@@ -64,10 +64,10 @@
 </head>
 
 <body class="bg-white text-gray-900 antialiased">
+  @include('components.navbar')
   <main>
     @yield('content')
   </main>
-  @include('components.navbar')
   @include('components.footer')
 </body>
 

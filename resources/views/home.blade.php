@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+@extends('app')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Beranda</title>
-  @vite('./resources/css/app.css')
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-</head>
+@section('content')
 
-<body>
-  <x-navbar></x-navbar>
-
-  {{-- SECTION 1 --}}
+{{-- SECTION 1 --}}
+<header>
   <section id="beranda" class="relative grid min-h-[88vh] place-items-center">
     <!-- Background image -->
     <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('{{ asset('img/hero.png') }}');"
@@ -27,12 +17,6 @@
       <p class="mt-4 text-base text-white/90 sm:text-lg">
         Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
       </p>
-      <div class="mt-10">
-        <a href="#destinasi"
-          class="inline-flex items-center rounded-lg bg-white/90 px-6 py-3 text-gray-900 transition hover:bg-white">
-          Jelajahi Sekarang
-        </a>
-      </div>
     </div>
     <!-- Scroll indicator -->
     <a href="#destinasi" class="group absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80">
@@ -47,6 +31,9 @@
       </svg>
     </a>
   </section>
+</header>
+
+<main>
 
   {{-- SECTION 2 --}}
   <section id="destinasi" class="bg-gray-50 py-16">
@@ -111,7 +98,6 @@
     </div>
   </section>
 
-  <x-footer></x-footer>
-</body>
+</main>
 
-</html>
+@endsection

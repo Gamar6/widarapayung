@@ -1,7 +1,4 @@
-<x-navbar></x-navbar>
-
 @extends('app')
-
 @section('title', 'Profil Destinasi Wisata')
 
 @push('meta')
@@ -25,9 +22,7 @@
     <section class="container mx-auto space-y-8 px-4 py-8">
       <x-destinasi.card title="Nama Wisata" :fasilitas="['Toilet', 'Mushola', 'Gazebo', 'Warung']" :aktivitas="['Berenang', 'Bermain pasir', 'Kuliner', 'Fotografi']"
         image="https://placehold.co/800x500?text=Gambar+1" imagePosition="left" />
-
       <x-destinasi.card title="Nama Wisata" image="https://placehold.co/800x500?text=Gambar+2" imagePosition="right" />
-
       <x-destinasi.card title="Nama Wisata" image="https://placehold.co/800x500?text=Gambar+3" imagePosition="left" />
     </section>
 

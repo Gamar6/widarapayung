@@ -24,15 +24,15 @@
           <div x-show="drop" x-transition.origin.top.left @click.outside="drop=false"
             class="absolute left-0 z-50 mt-2 w-56 rounded-lg border border-gray-200 bg-white shadow-lg">
             <ul class="py-2 text-sm">
-              <li><a href="#akomodasi-hotel" class="block px-4 py-2 hover:bg-gray-50">Hotel</a></li>
-              <li><a href="#akomodasi-villa" class="block px-4 py-2 hover:bg-gray-50">Villa</a></li>
-              <li><a href="#akomodasi-homestay" class="block px-4 py-2 hover:bg-gray-50">Homestay</a></li>
+              <li><a href="/kendaraan" class="block px-4 py-2 hover:bg-gray-50">Kendaraan</a></li>
+              <li><a href="/hotel" class="block px-4 py-2 hover:bg-gray-50">Hotel</a></li>
+              <li><a href="/homestay" class="block px-4 py-2 hover:bg-gray-50">Homestay</a></li>
             </ul>
           </div>
         </div>
 
-        <a href="#virtual" class="text-sm text-gray-600 hover:text-gray-900">Virtual Tour</a>
-        <a href="#kontak" class="text-sm text-gray-600 hover:text-gray-900">Kontak</a>
+        <a href="/virtual-tour" class="text-sm text-gray-600 hover:text-gray-900">Virtual Tour</a>
+        <a href="/contact" class="text-sm text-gray-600 hover:text-gray-900">Kontak</a>
       </div>
 
       <!-- Mobile button -->
@@ -60,9 +60,9 @@
           </svg>
         </button>
         <div x-show="open" x-transition class="border-t">
-          <a href="#akomodasi-hotel" class="block px-3 py-2 hover:bg-gray-50">Hotel</a>
-          <a href="#akomodasi-villa" class="block px-3 py-2 hover:bg-gray-50">Villa</a>
-          <a href="#akomodasi-homestay" class="block px-3 py-2 hover:bg-gray-50">Homestay</a>
+          <a href="/kendaraan" class="block px-3 py-2 hover:bg-gray-50">Kendaraan</a>
+          <a href="/hotel" class="block px-3 py-2 hover:bg-gray-50">Hotel</a>
+          <a href="/homestay" class="block px-3 py-2 hover:bg-gray-50">Homestay</a>
         </div>
       </div>
 
