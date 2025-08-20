@@ -8,7 +8,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wisata Pantai - Akomodasi & Destinasi Terbaik</title>
+  <title>Widara Payung</title>
   <meta name="description"
     content="Jelajahi wisata pantai, akomodasi, dan destinasi pilihan dengan tampilan modern dan responsif." />
   <link rel="canonical" href="{{ url()->current() }}" />

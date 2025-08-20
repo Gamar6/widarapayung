@@ -23,3 +23,7 @@ route::get('/hotel', function () {
 route::get('/homestay', function () {
     return view('homestay');
 });
+
+route::get('/contact', function () {
+    return view('contact');
+});
