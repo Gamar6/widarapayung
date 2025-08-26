@@ -16,9 +16,9 @@
 
 <main>
     <section class="container mx-auto space-y-8 px-4 py-8">
-        <x-kendaraan.card title="Nama Kendaraan" image="https://placehold.co/800x500?text=Gambar+1" imagePosition="left" />
-        <x-kendaraan.card title="Nama Kendaraan" image="https://placehold.co/800x500?text=Gambar+2" imagePosition="right" />
-        <x-kendaraan.card title="Nama Kendaraan" image="https://placehold.co/800x500?text=Gambar+3" imagePosition="left" />
+        <x-kendaraan.kendaraan-card title="Nama Kendaraan" image="https://placehold.co/800x500?text=Gambar+1" imagePosition="left" />
+        <x-kendaraan.kendaraan-card title="Nama Kendaraan" image="https://placehold.co/800x500?text=Gambar+2" imagePosition="right" />
+        <x-kendaraan.kendaraan-card title="Nama Kendaraan" image="https://placehold.co/800x500?text=Gambar+3" imagePosition="left" />
     </section>
     
     {{-- CTA --}}

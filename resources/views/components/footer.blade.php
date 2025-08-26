@@ -2,7 +2,7 @@
     <!-- Simplicity is an acquired taste. - Katharine Gerould -->
 </div> --}}
 
-<footer id="kontak" class="bg-slate-900 text-slate-200"> 
+<footer id="kontak" class="bg-birufooter text-slate-200"> 
     <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8"> 
         <div> 
             <div class="inline-flex items-center justify-center h-10 px-4 rounded bg-slate-800/80">Logo Web</div> 
