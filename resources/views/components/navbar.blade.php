@@ -25,8 +25,7 @@
             class="absolute left-0 z-50 mt-2 w-56 rounded-lg border border-gray-200 bg-white shadow-lg">
             <ul class="py-2 text-sm">
               <li><a href="/kendaraan" class="block px-4 py-2 hover:bg-gray-50">Kendaraan</a></li>
-              <li><a href="/hotel" class="block px-4 py-2 hover:bg-gray-50">Hotel</a></li>
-              <li><a href="/homestay" class="block px-4 py-2 hover:bg-gray-50">Homestay</a></li>
+              <li><a href="/hostel" class="block px-4 py-2 hover:bg-gray-50">Hostel</a></li>
             </ul>
           </div>
         </div>
@@ -61,13 +60,12 @@
         </button>
         <div x-show="open" x-transition class="border-t">
           <a href="/kendaraan" class="block px-3 py-2 hover:bg-gray-50">Kendaraan</a>
-          <a href="/hotel" class="block px-3 py-2 hover:bg-gray-50">Hotel</a>
-          <a href="/homestay" class="block px-3 py-2 hover:bg-gray-50">Homestay</a>
+          <a href="/hostel" class="block px-3 py-2 hover:bg-gray-50">Hostel</a>
         </div>
       </div>
 
       <a href="#virtual" class="block py-1">Virtual Tour</a>
-      <a href="#kontak" class="block py-1">Kontak</a>
+      <a href="/contact" class="block py-1">Kontak</a>
     </div>
   </div>
 </nav>

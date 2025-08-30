@@ -16,13 +16,10 @@ route::get('/kendaraan', function () {
     return view('kendaraan');
 });
 
-route::get('/hotel', function () {
-    return view('hotel');
+route::get('/hostel', function () {
+    return view('hostel');
 });
 
-route::get('/homestay', function () {
-    return view('homestay');
-});
 
 route::get('/contact', function () {
     return view('contact');
