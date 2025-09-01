@@ -4,10 +4,16 @@
 
 {{-- SECTION 1 --}}
 <header>
-  <section id="beranda" class="relative grid min-h-[88vh] place-items-center">
+  <section id="beranda" class="relative grid min-h-screen place-items-center -top-15">
     <!-- Background image -->
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('{{ asset('img/hero.png') }}');"
-      aria-hidden="true"></div>
+    <!-- <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('{{ asset('video/bg-hero.mp4') }}');"
+      aria-hidden="true"></div> -->
+    <div class="absolute inset-0 -z-10 overflow-hidden">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="{{ asset('video/bg-hero.mp4') }}" type="video/mp4">
+            Browser kamu tidak mendukung video.
+        </video>
+    </div>
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
     <div class="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
