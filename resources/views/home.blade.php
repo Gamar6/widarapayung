@@ -4,7 +4,7 @@
 
 {{-- SECTION 1 --}}
 <header>
-  <section id="beranda" class="relative grid min-h-screen place-items-center -top-15">
+  <section id="beranda" class="relative grid min-h-screen place-items-center -top-16">
     <!-- Background image -->
     <!-- <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('{{ asset('video/bg-hero.mp4') }}');"
       aria-hidden="true"></div> -->
@@ -42,7 +42,7 @@
 <main>
 
   {{-- SECTION 2 --}}
-  <section id="destinasi" class="bg-gray-50 py-16">
+  <section id="destinasi" class="bg-gray-50 pt-24 pb-16">
     <div class="mx-auto max-w-7xl px-6">
       <header class="mb-8">
         <h2 class="text-2xl font-semibold md:text-3xl">Destinasi Pilihan</h2>

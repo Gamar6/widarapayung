@@ -2,18 +2,19 @@
     <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
 </div> --}}
 
-<nav x-data="{ mobile: false, drop: false }" class="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur">
+<!-- <nav x-data="{ mobile: false, drop: false }" class="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur"> -->
+<nav x-data="{ mobile: false, drop: false, scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 50 })" :class="scrolled ? 'bg-white/80 border-b border-gray-200 backdrop-blur' : 'bg-transparent'" class="sticky top-0 z-50 transition-colors duration-500">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex h-16 items-center justify-between"><a href="{{ url('/') }}" class="text-lg font-semibold">Nama
         Website</a>
 
       <!-- Desktop -->
       <div class="hidden items-center gap-6 md:flex">
-        <a href="/" class="text-sm text-gray-600 hover:text-gray-900">Beranda</a>
-        <a href="/profil-wisata" class="text-sm text-gray-600 hover:text-gray-900">Profil Wisata</a>
+        <a href="/" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Beranda</a>
+        <a href="/profil-wisata" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Profil Wisata</a>
 
         <div class="relative" @keydown.escape.window="drop=false">
-          <button @click="drop=!drop" class="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900">
+          <button @click="drop=!drop" class="inline-flex items-center gap-2 text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">
             Akomodasi
             <svg class="h-4 w-4 transition-transform" :class="drop ? 'rotate-180' : ''" viewBox="0 0 20 20"
               fill="currentColor">
@@ -30,8 +31,8 @@
           </div>
         </div>
 
-        <a href="/virtual-tour" class="text-sm text-gray-600 hover:text-gray-900">Virtual Tour</a>
-        <a href="/contact" class="text-sm text-gray-600 hover:text-gray-900">Kontak</a>
+        <a href="/virtual-tour" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Virtual Tour</a>
+        <a href="/contact" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Kontak</a>
       </div>
 
       <!-- Mobile button -->

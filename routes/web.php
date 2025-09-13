@@ -24,3 +24,8 @@ route::get('/hostel', function () {
 route::get('/contact', function () {
     return view('contact');
 });
+
+
+Route::get('/widarapayung', function () {
+    return view('coba-claude');
+});
