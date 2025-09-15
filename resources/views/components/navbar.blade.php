@@ -5,31 +5,15 @@
 <!-- <nav x-data="{ mobile: false, drop: false }" class="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur"> -->
 <nav x-data="{ mobile: false, drop: false, scrolled: false }" x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 50 })" :class="scrolled ? 'bg-white/80 border-b border-gray-200 backdrop-blur' : 'bg-transparent'" class="sticky top-0 z-50 transition-colors duration-500">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between"><a href="{{ url('/') }}" class="text-lg font-semibold">Nama
-        Website</a>
+    <div class="flex h-16 items-center justify-between"><a href="{{ url('/') }}" class="text-lg font-semibold">Widarapayung</a>
 
       <!-- Desktop -->
       <div class="hidden items-center gap-6 md:flex">
         <a href="/" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Beranda</a>
         <a href="/profil-wisata" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Profil Wisata</a>
+        <a href="/kendaraan" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Transportasi</a>
 
-        <div class="relative" @keydown.escape.window="drop=false">
-          <button @click="drop=!drop" class="inline-flex items-center gap-2 text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">
-            Akomodasi
-            <svg class="h-4 w-4 transition-transform" :class="drop ? 'rotate-180' : ''" viewBox="0 0 20 20"
-              fill="currentColor">
-              <path
-                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" />
-            </svg>
-          </button>
-          <div x-show="drop" x-transition.origin.top.left @click.outside="drop=false"
-            class="absolute left-0 z-50 mt-2 w-56 rounded-lg border border-gray-200 bg-white shadow-lg">
-            <ul class="py-2 text-sm">
-              <li><a href="/kendaraan" class="block px-4 py-2 hover:bg-gray-50">Kendaraan</a></li>
-              <li><a href="/hostel" class="block px-4 py-2 hover:bg-gray-50">Hostel</a></li>
-            </ul>
-          </div>
-        </div>
+        
 
         <a href="/virtual-tour" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Virtual Tour</a>
         <a href="/contact" class="text-sm transition-colors" :class="scrolled ? 'text-gray-600 hover:text-gray-900' : 'text-white hover:text-gray-200'">Kontak</a>
@@ -51,20 +35,7 @@
     <div class="space-y-2 px-4 py-3">
       <a href="/" class="block py-1">Beranda</a>
       <a href="/profil-wisata" class="block py-1">Profil Wisata</a>
-      <div x-data="{ open: false }" class="rounded-md border">
-        <button @click="open=!open" class="flex w-full items-center justify-between px-3 py-2">
-          <span>Akomodasi</span>
-          <svg class="h-4 w-4" :class="open ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor">
-            <path
-              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" />
-          </svg>
-        </button>
-        <div x-show="open" x-transition class="border-t">
-          <a href="/kendaraan" class="block px-3 py-2 hover:bg-gray-50">Kendaraan</a>
-          <a href="/hostel" class="block px-3 py-2 hover:bg-gray-50">Hostel</a>
-        </div>
-      </div>
-
+      <a href="/kendaraan" class="block py-1">Transportasi</a>
       <a href="#virtual" class="block py-1">Virtual Tour</a>
       <a href="/contact" class="block py-1">Kontak</a>
     </div>

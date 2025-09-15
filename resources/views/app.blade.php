@@ -4,29 +4,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Widara Payung</title>
+  <title>@yield('title', 'Wisata Pantai')</title>
   <meta name="description"
     content="Jelajahi wisata pantai, akomodasi, dan destinasi pilihan dengan tampilan modern dan responsif." />
   <link rel="canonical" href="{{ url()->current() }}" />
-  <meta property="og:title" content="Wisata Pantai" />
+  <meta property="og:title" content="@yield('title', 'Wisata Pantai')" />
   <meta property="og:description" content="Akomodasi & destinasi pilihan untuk liburan Anda." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ url()->current() }}" />
+
   <!-- Google Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
     rel="stylesheet">
+
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
   <!-- Alpine.js (CDN) -->
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-  <style>
-    /* Font defaults + small utilities using Tailwind layers */
-    @layer base {
+  <!-- Pannellum (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
 
-      html,
-      body {
+  <style>
+    @layer base {
+      html, body {
         font-family: 'Montserrat', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
       }
     }
@@ -37,19 +40,9 @@
       }
 
       @keyframes wheel {
-        0% {
-          opacity: 0;
-          transform: translate(-50%, 0);
-        }
-
-        30% {
-          opacity: 1;
-        }
-
-        100% {
-          opacity: 0;
-          transform: translate(-50%, 16px);
-        }
+        0% { opacity: 0; transform: translate(-50%, 0); }
+        30% { opacity: 1; }
+        100% { opacity: 0; transform: translate(-50%, 16px); }
       }
 
       .animate-wheel {
@@ -61,10 +54,15 @@
 
 <body class="bg-white text-gray-900 antialiased">
   @include('components.navbar')
+
   <main>
     @yield('content')
   </main>
+
   @include('components.footer')
+
+  {{-- Tempat khusus untuk script tambahan per halaman --}}
+  @stack('scripts')
 </body>
 
 </html>

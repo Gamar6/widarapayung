@@ -18,10 +18,10 @@
     <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"></div>
     <div class="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
       <h1 class="font-playfair text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-        Lorem Ipsum Dolor Sit Amet
+        Selamat Datang di Pantai Widarapayung
       </h1>
       <p class="mt-4 text-base text-white/90 sm:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit quisque
+        Ayo Jelajahi Keindahan Alam dan Rasakan Pesona Pantai Widarapayung
       </p>
     </div>
     <!-- Scroll indicator -->
@@ -47,29 +47,47 @@
       <header class="mb-8">
         <h2 class="text-2xl font-semibold md:text-3xl">Destinasi Pilihan</h2>
         <p class="mt-2 max-w-2xl text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem
-          placerat in.
+          Jelajahi destinasi wisata terbaik di sekitar Pantai Widarapayung.
         </p>
       </header>
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        @foreach ([1, 2, 3] as $i)
-          <article class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
-            <img src="https://placehold.co/640x380/png" alt="Gambar destinasi {{ $i }}" loading="lazy"
+        @php
+          $destinasi = [
+            [
+              'img' => 'img/spot/spot-1.jpg',
+              'nama' => 'Pantai Pasir Putih',
+              'deskripsi' => 'Pantai dengan pasir putih yang indah dan cocok untuk bersantai.',
+            ],
+            [
+              'img' => 'img/spot/spot-2.jpg',
+              'nama' => 'Bukit Cinta',
+              'deskripsi' => 'Spot romantis dengan pemandangan matahari terbenam.',
+            ],
+            [
+              'img' => 'img/spot/spot-3.jpg',
+              'nama' => 'Hutan Mangrove',
+              'deskripsi' => 'Eksplorasi alam di hutan mangrove yang asri dan alami.',
+            ],
+          ];
+        @endphp
+
+        @foreach ($destinasi as $item)
+        <article class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+          <img src="{{ $item['img'] }}" alt="Gambar {{ $item['nama'] }}" loading="lazy"
               class="h-48 w-full object-cover">
-            <div class="p-5">
-              <h3 class="font-medium">Nama Wisata</h3>
-              <p class="mt-2 text-sm text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem
-                placerat in.
-              </p>
-              <div class="mt-4">
-                <a href="#"
-                  class="inline-flex items-center justify-center rounded-md bg-amber-500 px-4 py-2 text-white transition hover:bg-amber-600">
-                  Selengkapnya
-                </a>
-              </div>
+          <div class="p-5">
+            <h3 class="font-medium">{{ $item['nama'] }}</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              {{ $item['deskripsi'] }}
+            </p>
+            <div class="mt-4">
+              <a href="#"
+                class="inline-flex items-center justify-center rounded-md bg-amber-500 px-4 py-2 text-white transition hover:bg-amber-600">
+                Selengkapnya
+              </a>
             </div>
-          </article>
+          </div>
+        </article>
         @endforeach
       </div>
     </div>
