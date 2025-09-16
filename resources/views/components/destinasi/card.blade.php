@@ -78,11 +78,11 @@
       </div>
 
       <div class="mt-6 flex flex-wrap gap-3">
-        <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition">
+        <a href="/virtual-tour" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7l9 5-9 5-9-5 9-5zm0 10.18l6.26-3.48L12 10.22l-6.26 3.48L12 17.18z"/></svg>
           Virtual Tour
         </a>
-        <a href="#kontak" class="inline-flex items-center px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition">
+        <a href="/contact" class="inline-flex items-center px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50 transition">
           Hubungi Kami
         </a>
       </div>

@@ -13,17 +13,15 @@
         Profil Destinasi Wisata
       </h1>
       <p class="mx-auto mt-3 max-w-2xl text-gray-600">
-        Lorem ipsum dolor sit amet consectetur adipiscing.
+        berikut adalah profil destinasi wisata yang ada di Widarapayung
       </p>
     </div>
   </header>
 
   <main>
     <section class="container mx-auto space-y-8 px-4 py-8">
-      <x-destinasi.card title="Nama Wisata" :fasilitas="['Toilet', 'Mushola', 'Gazebo', 'Warung']" :aktivitas="['Berenang', 'Bermain pasir', 'Kuliner', 'Fotografi']"
-        image="https://placehold.co/800x500?text=Gambar+1" imagePosition="left" />
-      <x-destinasi.card title="Nama Wisata" image="https://placehold.co/800x500?text=Gambar+2" imagePosition="right" />
-      <x-destinasi.card title="Nama Wisata" image="https://placehold.co/800x500?text=Gambar+3" imagePosition="left" />
+      <x-destinasi.card title="Pantai Indah Widarapayung" :fasilitas="['Toilet', 'Mushola', 'Gazebo', 'Warung', 'ATV', 'Kuda Lumping']" :aktivitas="['Berenang', 'Bermain pasir', 'Kuliner', 'Fotografi']"
+        image="/img/spot/spot-1.jpg" imagePosition="left" deskripsi="Pantai indah Widarapayung adalah Lorem ipsum dolor sit." />
     </section>
 
     {{-- CTA --}}

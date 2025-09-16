@@ -82,7 +82,7 @@
             </p>
             <div class="mt-4">
               <a href="#"
-                class="inline-flex items-center justify-center rounded-md bg-amber-500 px-4 py-2 text-white transition hover:bg-amber-600">
+                class="inline-flex items-center justify-center rounded-md bg-amber-500 px-4 py-2 text-white transition hover:bg-amber-6">
                 Selengkapnya
               </a>
             </div>

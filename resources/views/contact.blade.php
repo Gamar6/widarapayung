@@ -90,13 +90,13 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <div class="space-y-6">
-          <x-pertanyaan name="Lorem ipsum dolor sit amet." pertanyaan="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid numquam ex veniam sapiente cum." />
-          <x-pertanyaan name="Lorem ipsum dolor sit amet." pertanyaan="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid numquam ex veniam sapiente cum." />
+          <x-pertanyaan name="Yuni Sara" pertanyaan="Di Pantai widarapayung apakah memiliki makanan/camilan khas daerahnya?" />
+          <x-pertanyaan name="Ahmad Dani" pertanyaan="Apakah bisa buat manggung?" />
         </div>
 
         <div class="space-y-6">
-          <x-pertanyaan name="Lorem ipsum dolor sit amet." pertanyaan="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid numquam ex veniam sapiente cum." />
-          <x-pertanyaan name="Lorem ipsum dolor sit amet." pertanyaan="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid numquam ex veniam sapiente cum." />
+          <x-pertanyaan name="Greenday" pertanyaan="Can i performance there?" />
+          <x-pertanyaan name="Mike Tyson" pertanyaan="Can i play volley there?" />
         </div>
       </div>
     </section>
