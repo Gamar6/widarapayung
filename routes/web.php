@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\VirtualTourController;
 use Illuminate\Support\Facades\Route;
 
 route::get('/app', function () {
@@ -51,8 +52,4 @@ route::get('/contact', function () {
 
 Route::get('/widarapayung', function () {
     return view('coba-claude');
-});
-
-route::get('/test', function () {
-    return view('test');
 });
