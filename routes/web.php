@@ -50,6 +50,8 @@ route::get('/contact', function () {
 });
 
 
-Route::get('/widarapayung', function () {
-    return view('coba-claude');
-});
+// Route::get('/widarapayung', function () {
+//     return view('widarapayung');
+// });
+
+Route::get('/widarapayung', [VirtualTourController::class, 'index']);
