@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class VirtualTourController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         // Contoh scenes statis (bisa disimpan ke DB nanti)
         $scenes = [
@@ -944,7 +944,7 @@ class VirtualTourController extends Controller
                 ],
             ],
         ];
-
-        return view('widarapayung', compact('scenes'));
+    $firstScene = $request->query('scene', 'scene1'); // default: scene1
+    return view('widarapayung', compact('scenes', 'firstScene'));
     }
 }

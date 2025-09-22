@@ -65,10 +65,9 @@
   <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 
   <script>
-    // Laravel mengirim variable $scenes; kita serialisasi ke JS
     const scenesFromServer = @json($scenes);
+    const firstScene = @json($firstScene); // dari controller
 
-    // Konversi data ke format pannellum: scenes object
     const pannellumScenes = {};
     Object.keys(scenesFromServer).forEach(sceneId => {
       const s = scenesFromServer[sceneId];
@@ -80,7 +79,6 @@
         yaw: s.yaw || 0,
         pitch: s.pitch || 0,
         hotSpots: (s.hotSpots || []).map(hs => {
-          // Pannellum hotspot object expects 'type' either 'scene' or 'info'
           const base = {
             pitch: hs.pitch,
             yaw: hs.yaw,
@@ -90,17 +88,14 @@
           if (hs.type === 'scene') {
             base.sceneId = hs.sceneId;
           }
-          // optional: add URL or clickHandler
-          if (hs.url) base.URL = hs.url;
           return base;
         })
       };
     });
 
-    // Inisialisasi viewer
     const viewer = pannellum.viewer('panorama', {
       default: {
-        firstScene: Object.keys(pannellumScenes)[0],
+        firstScene: firstScene, // <- dari URL / controller
         sceneFadeDuration: 1000,
         autorotateDelay: 3000
       },
@@ -108,7 +103,7 @@
       disableContextMenu: true
     });
 
-    // Buat tombol scene di UI
+    // Generate scene buttons
     const sceneButtonsDiv = document.getElementById('sceneButtons');
     Object.keys(pannellumScenes).forEach(id => {
       const btn = document.createElement('button');

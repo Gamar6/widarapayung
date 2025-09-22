@@ -11,12 +11,14 @@
   <header class="border-b bg-slate-50/70">
     <div class="container mx-auto px-4 py-10 text-center">
       <h1 class="text-3xl font-[Playfair_Display] font-bold md:text-4xl">Hubungi Kami</h1>
-      <p class="mx-auto mt-3 max-w-2xl text-gray-600">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+      <p class="mx-auto mt-3 max-w-2xl text-gray-600">Kami menerima kritik dan saran dari Anda</p>
     </div>
   </header>
 
+  {{-- Main Content --}}
   <main>
-    {{-- Contact Form and Info Section --}}
+    {{-- Contact Form & Info Section --}}
+
     <section class="container mx-auto px-4 my-16" id="contact-form-section">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         
@@ -30,6 +32,7 @@
 
             <form action="#" method="POST" class="space-y-6">
               @csrf
+
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
                 <input type="text" name="name" id="name" required
@@ -58,19 +61,40 @@
 
         {{-- Contact Information --}}
         <div>
-          <x-info-card icon="img/icon-loc.svg" title="Alamat" :description="[
-              'Widarapayung Wetan, Sawah,Ladang, Sidayu',
+          <x-info-card
+            icon="img/icon-loc.svg"
+            title="Alamat"
+            :description="[
+              'Widarapayung Wetan, Sawah, Ladang, Sidayu',
               'Kec. Binangun, Kabupaten Cilacap, Jawa Tengah 53281',
-          ]" />
-
-          <x-info-card icon="img/icon-telp.svg" title="Telepon" :description="['+62 813 2758 1412', '+62 816 576 772']"/>
-
-          <x-info-card icon="img/icon-ig.svg" title="Instagram" :description="['@pantaiindahwidarapayung_']" link="https://www.instagram.com/pantaiindahwidarapayung_/" 
+            ]"
           />
-          
-          <x-info-card icon="img/icon-opr.svg" title="Oprasional" :description="['Senin - Jumat: 08:00 - 17:00', 'Sabtu - Minggu: 07:00 - 18:00']" />
 
-          {{-- Google Maps Location --}}
+          <x-info-card
+            icon="img/icon-telp.svg"
+            title="Telepon"
+            :description="[
+              '+62 813 2758 1412'
+            ]"
+          />
+
+          <x-info-card
+            icon="img/icon-ig.svg"
+            title="Instagram"
+            :description="['@pantaiindahwidarapayung_']"
+            link="https://www.instagram.com/pantaiindahwidarapayung_/"
+          />
+
+          <x-info-card
+            icon="img/icon-opr.svg"
+            title="Oprasional"
+            :description="[
+              'Senin - Jumat: 08:00 - 17:00',
+              'Sabtu - Minggu: 07:00 - 18:00',
+            ]"
+          />
+
+          {{-- Google Maps --}}
           <div class="mx-auto mt-4 max-w-3xl rounded-lg bg-white p-8 shadow-2xl">
             <h2 class="text-2xl font-bold text-gray-900">Lokasi Kami</h2>
             <div class="mt-4">
@@ -84,21 +108,37 @@
       </div>
     </section>
 
+
     {{-- FAQ Section --}}
+
     <section class="container mx-auto px-4 my-16">
       <h2 class="text-center text-2xl font-bold text-gray-900 mb-10">Pertanyaan yang Sering Diajukan</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <div class="space-y-6">
-          <x-pertanyaan name="Yuni Sara" pertanyaan="Di Pantai widarapayung apakah memiliki makanan/camilan khas daerahnya?" />
-          <x-pertanyaan name="Ahmad Dani" pertanyaan="Apakah bisa buat manggung?" />
+          <x-pertanyaan
+            name="Di Pantai Widarapayung apakah memiliki makanan/camilan khas daerahnya?"
+            pertanyaan="Ya, di Pantai Widarapayung terdapat beberapa makanan/camilan khas daerah seperti mendoan kasur, steak undur-undur laut, dan lain-lain."
+          />
+          <x-pertanyaan
+            name="Apakah bisa camping di Pantai Widarapayung?"
+            pertanyaan="Ya, pengunjung diperbolehkan untuk camping di area yang telah disediakan dengan mengikuti aturan yang berlaku."
+          />
         </div>
 
         <div class="space-y-6">
-          <x-pertanyaan name="Greenday" pertanyaan="Can i performance there?" />
-          <x-pertanyaan name="Mike Tyson" pertanyaan="Can i play volley there?" />
+          <x-pertanyaan
+            name="Apakah toiletnya bersih?"
+            pertanyaan="Tentu Saja, toiletnya bersih dan terawat."
+          />
+          <x-pertanyaan
+            name="Apakah diperbolehkan berenang di pantai?"
+            pertanyaan="Tentu, pengunjung diperbolehkan berenang, berselancar di area yang telah ditentukan. Namun, selalu perhatikan kondisi ombak dan ikuti petunjuk dari petugas keamanan pantai."
+          />
         </div>
+
       </div>
     </section>
+
   </main>
 @endsection

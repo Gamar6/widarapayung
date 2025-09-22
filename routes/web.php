@@ -22,24 +22,10 @@ Route::get('/virtual-tour', function () {
         [
             'nama' => 'Pantai Widarapayung',
             'lokasi' => 'Cilacap, Jawa Tengah',
-            'gambar' => '/img/360/scene1.jpg',
+            'gambar' => '/img/spot/spot-gapura.jpg',
             'panorama' => '/img/360/scene1.jpg', // gambar panorama 360
             'highlight' => ['Sunset', 'Pantai Luas', 'Spot Foto'],
-        ],
-        [
-            'nama' => 'Pantai Tampen',
-            'lokasi' => 'Cilacap, Jawa Tengah',
-            'gambar' => '/img/360/scene2.jpg',
-            'panorama' => '/img/360/scene2.jpg',
-            'highlight' => ['Pemandangan Indah', 'Pasir Putih'],
-        ],
-        [
-            'nama' => 'Sentra Madu Klanceng',
-            'lokasi' => 'Cilacap, Jawa Tengah',
-            'gambar' => '/img/360/scene3.jpg',
-            'panorama' => '/img/360/scene3.jpg',
-            'highlight' => ['Wisata Edukasi', 'Kuliner Lokal'],
-        ],
+        ]
     ];
 
     return view('virtual-tour', compact('destinasi'));
@@ -48,10 +34,9 @@ Route::get('/virtual-tour', function () {
 route::get('/contact', function () {
     return view('contact');
 });
-
-
 // Route::get('/widarapayung', function () {
 //     return view('widarapayung');
 // });
+Route::get('/widarapayung', [VirtualTourController::class, 'index'])->name('widarapayung.index');
 
-Route::get('/widarapayung', [VirtualTourController::class, 'index']);
+route::get('/jembut', [VirtualTourController::class, 'index']);
