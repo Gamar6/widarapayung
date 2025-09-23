@@ -74,7 +74,7 @@
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ($destinasi as $item)
-          <article class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+          <article class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm hover:scale-105 transition-all duration-300">
             <img src="{{ $item['img'] }}" alt="Gambar {{ $item['nama'] }}" loading="lazy" class="h-48 w-full object-cover">
             <div class="p-5">
               <h3 class="font-medium">{{ $item['nama'] }}</h3>
@@ -113,7 +113,7 @@
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         @foreach ($spots as $spot)
           <figure class="relative">
-            <a href="{{ $spot['url'] }}">
+            <a href="{{ $spot['url'] }}" class="group block overflow-hidden rounded-lg border border-emerald-200/70 hover:scale-105 transition-all duration-300">
               <img src="{{ asset($spot['img']) }}" alt="{{ $spot['name'] }}" loading="lazy" class="h-44 w-full rounded-lg object-cover shadow-md">
               <figcaption class="absolute bottom-2 left-2 rounded bg-black/40 px-2 py-1 text-xs font-medium">
                 {{ $spot['name'] }}

@@ -27,7 +27,7 @@
           <div class="mx-auto max-w-3xl rounded-lg bg-white p-8 shadow-2xl">
             <div class="mb-6">
               <h2 class="text-2xl font-bold text-gray-900">Kirim Pesan</h2>
-              <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <p class="mt-2 text-gray-600">Kritik dan saranmu sangat berarti bagi kami!</p>
             </div>
 
             <form action="#" method="POST" class="space-y-6">

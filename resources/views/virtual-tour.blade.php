@@ -78,17 +78,17 @@
                 {{-- Tombol Aksi --}}
                 <div x-data="{ shareOpen: false }">
                     <div class="flex flex-wrap gap-3">
-                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg"
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
                             onclick="window.location='{{ url('/widarapayung') }}'">
                             Mulai Virtual Tour
                         </button>
-                        <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg">Rating</button>
-                        <button class="px-4 py-2 bg-green-600 text-white rounded-lg"
+                        <button class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700">Rating</button>
+                        <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
                             @click="shareOpen = true">Bagikan</button>
                     </div>
 
                     {{-- Modal Bagikan --}}
-                    <div x-show="shareOpen" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+                    <div x-show="shareOpen" class="fixed inset-0 flex items-center justify-center z-50"
                          x-transition>
                         <div class="bg-white p-5 rounded-lg shadow-lg w-80 relative">
                             <h3 class="text-lg font-semibold mb-3">Bagikan Link</h3>
