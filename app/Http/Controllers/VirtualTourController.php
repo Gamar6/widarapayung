@@ -848,11 +848,8 @@ class VirtualTourController extends Controller
                     ],
                 ],
             ],
-
-
-            // trotoar pinggir
-            'scene37' => [
-                'title' => '37',            // papan PIW
+            'scene37' => [          // papan PIW
+                'title' => '37',
                 'panorama' => asset('img/360/scene37.jpg'),
                 'hfov' => 150,
                 'yaw' => 105,
@@ -863,7 +860,7 @@ class VirtualTourController extends Controller
                         'yaw' => 300,
                         'type' => 'scene',
                         'text' => 'Kembali',
-                        'sceneId' => 'scene36'        // setting back  
+                        'sceneId' => 'scene36'
                     ],
                     [
                         'pitch' => -2,
@@ -872,31 +869,62 @@ class VirtualTourController extends Controller
                         'text' => 'Lanjut',
                         'sceneId' => 'scene38'
                     ],
+                    [
+                        'pitch' => -2,
+                        'yaw' => 20,
+                        'type' => 'scene',
+                        'text' => 'Kiri',
+                        'sceneId' => 'scene84'
+                    ],
+                    [
+                        'pitch' => -2,
+                        'yaw' => 210,
+                        'type' => 'scene',
+                        'text' => 'Kanan',
+                        'sceneId' => 'scene80'
+                    ],
                 ],
             ],
             'scene38' => [
                 'title' => '38',
-                'panorama' => asset('img/360/pantai (2).jpg'),
+                'panorama' => asset('img/360/scene42.jpg'),
                 'hfov' => 150,
-                'yaw' => 40,
+                'yaw' => 270,
                 'pitch' => 0,
                 'hotSpots' => [
                     [
                         'pitch' => -3,
-                        'yaw' => 210,
+                        'yaw' => 75,
                         'type' => 'scene',
                         'text' => 'Kembali',
-                        'sceneId' => 'scene37'        // setting back
+                        'sceneId' => 'scene37'   
                     ],
                     [
                         'pitch' => -3,
-                        'yaw' => 40,
+                        'yaw' => 173,
+                        'type' => 'scene',
+                        'text' => 'Kiri',
+                        'sceneId' => 'scene51'       
+                    ],
+                    [
+                        'pitch' => -3,
+                        'yaw' => 270,
                         'type' => 'scene',
                         'text' => 'Lanjut',
                         'sceneId' => 'scene39'
                     ],
+                    [
+                        'pitch' => -3,
+                        'yaw' => 350,
+                        'type' => 'scene',
+                        'text' => 'Kanan',
+                        'sceneId' => 'scene47'
+                    ],
                 ],
             ],
+
+
+            // area pantai
             'scene39' => [
                 'title' => '39',
                 'panorama' => asset('img/360/pantai (3).jpg'),
@@ -905,18 +933,18 @@ class VirtualTourController extends Controller
                 'pitch' => 0,
                 'hotSpots' => [
                     [
-                        'pitch' => -3,
-                        'yaw' => 0,
+                        'pitch' => -4,
+                        'yaw' => 210,
                         'type' => 'scene',
                         'text' => 'Kembali',
-                        'sceneId' => 'scene39'        // setting back
+                        'sceneId' => 'scene38'        // setting back
                     ],
                     [
-                        'pitch' => 0,
-                        'yaw' => 180,
+                        'pitch' => -3,
+                        'yaw' => 40,
                         'type' => 'scene',
                         'text' => 'Lanjut',
-                        'sceneId' => 'scene37'
+                        'sceneId' => 'scene40'
                     ],
                 ],
             ],
@@ -928,19 +956,1036 @@ class VirtualTourController extends Controller
                 'pitch' => 0,
                 'hotSpots' => [
                     [
-                        'pitch' => -3,
-                        'yaw' => 0,
+                        'pitch' => -4,
+                        'yaw' => 200,
                         'type' => 'scene',
                         'text' => 'Kembali',
                         'sceneId' => 'scene39'        // setting back
                     ],
                     [
-                        'pitch' => 0,
+                        'pitch' => -3,
+                        'yaw' => 30,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene41'
+                    ],
+                ],
+            ],
+            'scene41' => [
+                'title' => '41',
+                'panorama' => asset('img/360/pantai (5).jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 200,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene40'        // setting back
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 30,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene42'
+                    ],
+                ],
+            ],
+            'scene42' => [
+                'title' => '42',
+                'panorama' => asset('img/360/pantai (6).jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 205,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene41'        // setting back
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 40,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene43'
+                    ],
+                ],
+            ],
+            'scene43' => [
+                'title' => '43',
+                'panorama' => asset('img/360/pantai (7).jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 200,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene42'        // setting back
+                    ],
+                    [
+                        'pitch' => -5,
+                        'yaw' => 30,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene44'
+                    ],
+                ],
+            ],
+            'scene44' => [
+                'title' => '44',
+                'panorama' => asset('img/360/pantai (8).jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 210,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene43'        // setting back
+                    ],
+                    [
+                        'pitch' => -5,
+                        'yaw' => 40,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene45'
+                    ],
+                ],
+            ],
+            'scene45' => [
+                'title' => '45',
+                'panorama' => asset('img/360/pantai (9).jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 190,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene44'        // setting back
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 30,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene46'
+                    ],
+                ],
+            ],
+            'scene46' => [
+                'title' => '46',
+                'panorama' => asset('img/360/pantai (10).jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 220,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene45'        // setting back
+                    ],
+                ],
+            ],
+
+
+            // Kanan
+            'scene47' => [
+                'title' => '47',
+                'panorama' => asset('img/360/scene41.jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -6,
+                        'yaw' => 182,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene38'
+                    ],
+                    [
+                        'pitch' => -3,
+                        'yaw' => 5,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene48'
+                    ], 
+                ],
+            ],
+            'scene48' => [
+                'title' => '48',
+                'panorama' => asset('img/360/scene40.jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -4,
+                        'yaw' => 178,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene47'
+                    ],
+                    [
+                        'pitch' => -3,
+                        'yaw' => 0,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene49'
+                    ], 
+                ],
+            ],
+            'scene49' => [
+                'title' => '49',
+                'panorama' => asset('img/360/scene39.jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 180,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene48'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 0,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene50'
+                    ], 
+                ],
+            ],
+            'scene50' => [
+                'title' => '50',
+                'panorama' => asset('img/360/scene38.jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -3,
+                        'yaw' => 182,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene49'
+                    ],
+                ],
+            ],
+
+
+            // Kiri
+            'scene51' => [
+                'title' => '51',
+                'panorama' => asset('img/360/scene43.jpg'),
+                'hfov' => 150,
+                'yaw' => 40,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => 0,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene38'
+                    ],
+                    [
+                        'pitch' => -4,
                         'yaw' => 180,
                         'type' => 'scene',
                         'text' => 'Lanjut',
-                        'sceneId' => 'scene37'
+                        'sceneId' => 'scene52'
+                    ], 
+                ],
+            ],
+            'scene52' => [
+                'title' => '52',
+                'panorama' => asset('img/360/scene44.jpg'),
+                'hfov' => 150,
+                'yaw' => 176,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -3,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene51'
                     ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 176,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene53'
+                    ], 
+                ],
+            ],
+            'scene53' => [
+                'title' => '53',
+                'panorama' => asset('img/360/scene45.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => 0,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene52'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 180,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene54'
+                    ], 
+                ],
+            ],
+            'scene54' => [
+                'title' => '54',
+                'panorama' => asset('img/360/scene46.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -3,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene53'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 176,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene55'
+                    ], 
+                ],
+            ],
+            'scene55' => [
+                'title' => '55',
+                'panorama' => asset('img/360/scene47.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene54'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene56'
+                    ], 
+                ],
+            ],
+            'scene56' => [
+                'title' => '56',
+                'panorama' => asset('img/360/scene48.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -7,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene55'
+                    ],
+                    [
+                        'pitch' => -8,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene75'
+                    ], 
+                ],
+            ],
+
+
+            'scene57' => [          // bagian anomali
+                'title' => '57',
+                'panorama' => asset('img/360/scene49.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    // [
+                    //     'pitch' => -5,
+                    //     'yaw' => -6,
+                    //     'type' => 'scene',
+                    //     'text' => 'Kembali',
+                    //     'sceneId' => 'scene54'
+                    // ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene58'
+                    ], 
+                ],
+            ],
+            'scene58' => [
+                'title' => '58',
+                'panorama' => asset('img/360/scene50.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene57'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene59'
+                    ], 
+                ],
+            ],
+            'scene59' => [
+                'title' => '59',
+                'panorama' => asset('img/360/scene51.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene58'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene60'
+                    ], 
+                ],
+            ],
+            'scene60' => [
+                'title' => '60',
+                'panorama' => asset('img/360/scene52.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene59'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene61'
+                    ], 
+                ],
+            ],
+            'scene61' => [
+                'title' => '61',
+                'panorama' => asset('img/360/scene53.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene60'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene62'
+                    ], 
+                ],
+            ],
+            'scene62' => [
+                'title' => '62',
+                'panorama' => asset('img/360/scene54.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene61'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene63'
+                    ], 
+                ],
+            ],
+            'scene63' => [
+                'title' => '63',
+                'panorama' => asset('img/360/scene55.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene62'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene64'
+                    ], 
+                ],
+            ],
+            'scene64' => [
+                'title' => '64',
+                'panorama' => asset('img/360/scene56.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene63'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene65'
+                    ], 
+                ],
+            ],
+            'scene65' => [
+                'title' => '65',
+                'panorama' => asset('img/360/scene57.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene64'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene66'
+                    ], 
+                ],
+            ],
+            'scene66' => [
+                'title' => '66',
+                'panorama' => asset('img/360/scene58.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene65'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene67'
+                    ], 
+                ],
+            ],
+            'scene67' => [
+                'title' => '67',
+                'panorama' => asset('img/360/scene59.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene66'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene68'
+                    ], 
+                ],
+            ],
+            'scene68' => [
+                'title' => '68',
+                'panorama' => asset('img/360/scene60.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene67'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene69'
+                    ], 
+                ],
+            ],
+            'scene69' => [
+                'title' => '69',
+                'panorama' => asset('img/360/scene61.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene68'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene70'
+                    ], 
+                ],
+            ],
+            'scene70' => [
+                'title' => '70',
+                'panorama' => asset('img/360/scene62.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene69'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene71'
+                    ], 
+                ],
+            ],
+            'scene71' => [
+                'title' => '71',
+                'panorama' => asset('img/360/scene63.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene70'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene72'
+                    ], 
+                ],
+            ],
+            'scene72' => [
+                'title' => '72',
+                'panorama' => asset('img/360/scene64.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene71'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene73'
+                    ], 
+                ],
+            ],
+            'scene73' => [
+                'title' => '73',
+                'panorama' => asset('img/360/scene65.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene72'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene74'
+                    ], 
+                ],
+            ],
+
+
+
+
+            'scene74' => [              // jalan pojok kiri
+                'title' => '74',
+                'panorama' => asset('img/360/scene66.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene73'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene75'
+                    ], 
+                ],
+            ],
+            'scene75' => [
+                'title' => '75',
+                'panorama' => asset('img/360/scene67.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene74'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 85,
+                        'type' => 'scene',
+                        'text' => 'Kiri',
+                        'sceneId' => 'scene56'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene76'
+                    ], 
+                ],
+            ],
+            'scene76' => [
+                'title' => '76',
+                'panorama' => asset('img/360/scene69.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene75'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene77'
+                    ], 
+                ],
+            ],
+            'scene77' => [
+                'title' => '77',
+                'panorama' => asset('img/360/scene70.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene76'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene78'
+                    ], 
+                ],
+            ],
+            'scene78' => [
+                'title' => '78',
+                'panorama' => asset('img/360/scene71.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene77'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene79'
+                    ], 
+                ],
+            ],
+            'scene79' => [
+                'title' => '79',
+                'panorama' => asset('img/360/scene72.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene78'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene80'
+                    ], 
+                ],
+            ],
+            'scene80' => [
+                'title' => '80',
+                'panorama' => asset('img/360/scene73.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene79'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene81'
+                    ], 
+                ],
+            ],
+            'scene81' => [
+                'title' => '81',
+                'panorama' => asset('img/360/scene74.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene80'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene82'
+                    ], 
+                ],
+            ],
+            'scene82' => [
+                'title' => '82',
+                'panorama' => asset('img/360/scene75.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene81'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene83'
+                    ], 
+                ],
+            ],
+            'scene83' => [
+                'title' => '83',
+                'panorama' => asset('img/360/scene76.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene82'
+                    ],
+                    [
+                        'pitch' => -4,
+                        'yaw' => 175,
+                        'type' => 'scene',
+                        'text' => 'Lanjut',
+                        'sceneId' => 'scene84'
+                    ], 
+                ],
+            ],
+            'scene84' => [
+                'title' => '84',
+                'panorama' => asset('img/360/scene77.jpg'),
+                'hfov' => 150,
+                'yaw' => 180,
+                'pitch' => 0,
+                'hotSpots' => [
+                    [
+                        'pitch' => -5,
+                        'yaw' => -6,
+                        'type' => 'scene',
+                        'text' => 'Kembali',
+                        'sceneId' => 'scene83'
+                    ],
+                    // [
+                    //     'pitch' => -4,
+                    //     'yaw' => 175,
+                    //     'type' => 'scene',
+                    //     'text' => 'Lanjut',
+                    //     'sceneId' => 'scene85'
+                    // ], 
                 ],
             ],
         ];
