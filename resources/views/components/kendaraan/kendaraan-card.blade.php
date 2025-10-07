@@ -7,7 +7,7 @@
     'fasilitas' => ['19 Kursi', 'AC', 'Non-AC'],
     'rute' => ['Benteng Pendem', 'Teluk Penyu', 'Pantai Sodong', 'Pantai Widarapayung', 'Pantai Jetis'],
     'image' => 'img/bus-damri-perintis.jpeg',
-    'mapsSrc' => 'https://www.google.com/maps/embed?pb=...' // ganti dengan embed link Google Maps asli
+    'mapsSrc' => 'https://www.google.com/maps/embed?pb=...'
 ])
 
 <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md">

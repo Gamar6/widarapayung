@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\VirtualTourController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 route::get('/app', function () {
@@ -33,10 +34,8 @@ Route::get('/virtual-tour', function () {
 
 route::get('/contact', function () {
     return view('contact');
-});
-// Route::get('/widarapayung', function () {
-//     return view('widarapayung');
-// });
-Route::get('/widarapayung', [VirtualTourController::class, 'index'])->name('widarapayung.index');
+}); 
 
-route::get('/jembut', [VirtualTourController::class, 'index']);
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
+
+Route::get('/widarapayung', [VirtualTourController::class, 'index'])->name('widarapayung.index');

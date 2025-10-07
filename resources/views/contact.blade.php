@@ -29,35 +29,63 @@
               <h2 class="text-2xl font-bold text-gray-900">Kirim Pesan</h2>
               <p class="mt-2 text-gray-600">Kritik dan saranmu sangat berarti bagi kami!</p>
             </div>
+            @if(session('success'))
+                <div class="mb-4 rounded-md bg-green-50 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            ✅
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-green-800">
+                                {{ session('success') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            @endif
 
-            <form action="#" method="POST" class="space-y-6">
-              @csrf
-
-              <div>
-                <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
-                <input type="text" name="name" id="name" required
-                  class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm">
-              </div>
-
-              <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" name="email" id="email" required
-                  class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm">
-              </div>
-
-              <div>
-                <label for="message" class="block text-sm font-medium text-gray-700">Pesan</label>
-                <textarea name="message" id="message" rows="4" required
-                  class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm"></textarea>
-              </div>
-
-              <button type="submit"
-                class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700">
-                Kirim Pesan
-              </button>
+            @if(session('error'))
+                <div class="mb-4 rounded-md bg-red-50 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            ❌
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-red-800">
+                                {{ session('error') }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            @endif
+                        <form action="{{ route('contact.send') }}" method="POST" class="space-y-6"> 
+                    @csrf
+                    
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
+                        <input type="text" name="name" id="name" required
+                        class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" required
+                        class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Pesan</label>
+                        <textarea name="message" id="message" rows="4" required
+                        class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm"></textarea>
+                    </div>
+                    
+                    <button type="submit"
+                    class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700">
+                    Kirim Pesan
+                </button>
             </form>
           </div>
-        </div>
+        </div>  
 
         {{-- Contact Information --}}
         <div>

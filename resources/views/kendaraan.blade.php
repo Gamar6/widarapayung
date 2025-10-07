@@ -34,7 +34,7 @@
         <p class="mt-2 text-gray-600">
           Hubungi kami untuk informasi lebih lanjut.
         </p>
-        <a href="#kontak"
+        <a href="/contact"
           class="mt-6 inline-block rounded-md bg-amber-500 px-6 py-3 text-white transition hover:bg-amber-600">
           Hubungi Kami
         </a>
