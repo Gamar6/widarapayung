@@ -40,9 +40,9 @@
           Tertarik Mengunjungi Destinasi Kami?
         </h2>
         <p class="mt-2 text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus.
+          Hubungi kami untuk informasi lebih lanjut dan penawaran khusus.
         </p>
-        <a href="#kontak"
+        <a href="/contact"
            class="mt-6 inline-block rounded-md bg-amber-500 px-6 py-3 text-white transition hover:bg-amber-600">
           Hubungi Kami
         </a>

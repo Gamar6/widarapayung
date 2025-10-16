@@ -25,8 +25,17 @@ Route::get('/virtual-tour', function () {
             'lokasi' => 'Cilacap, Jawa Tengah',
             'gambar' => '/img/spot/spot-gapura.jpg',
             'panorama' => '/img/360/scene1.jpg', // gambar panorama 360
+            'scene' => 'scene1',
             'highlight' => ['Sunset', 'Pantai Luas', 'Spot Foto'],
-        ]
+        ],
+        [
+            'nama' => 'Pintu Masuk 1',
+            'lokasi' => 'Cilacap, Jawa Tengah',
+            'gambar' => '/img/spot/pintumasuk-1.jpg',
+            'panorama' => '/img/360/scene14.jpg', // gambar panorama 360
+            'scene' => 'scene14',
+            'highlight' => ['Sunset', 'Pantai Luas', 'Spot Foto'],
+        ],
     ];
 
     return view('virtual-tour', compact('destinasi'));
