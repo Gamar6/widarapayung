@@ -13,6 +13,7 @@ class VirtualTourController extends Controller
             'scene1' => [
                 'title' => '1',
                 'panorama' => asset('img/360/scene1.jpg'),
+                'important' => true,
                 'hfov' => 150,
                 'yaw' => 0,
                 'pitch' => 0,
@@ -304,8 +305,9 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene14' => [
-                'title' => '14',
+                'title' => 'Pintu Masuk 1',
                 'panorama' => asset('img/360/scene14.jpg'),
+                'important' => true,
                 'hfov' => 150,
                 'yaw' => 180,
                 'pitch' => 0,
