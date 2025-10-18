@@ -8,35 +8,39 @@
 
 @section('content')
   {{-- Header Section --}}
-  <header class="border-b bg-slate-50/70">
+  <header class="border-b bg-slate-50/70 dark:bg-gray-900 dark:border-gray-700">
     <div class="container mx-auto px-4 py-10 text-center">
-      <h1 class="text-3xl font-[Playfair_Display] font-bold md:text-4xl">Hubungi Kami</h1>
-      <p class="mx-auto mt-3 max-w-2xl text-gray-600">Kami menerima kritik dan saran dari Anda</p>
+      <h1 class="text-3xl font-[Playfair_Display] font-bold md:text-4xl text-gray-900 dark:text-white">
+        Hubungi Kami
+      </h1>
+      <p class="mx-auto mt-3 max-w-2xl text-gray-600 dark:text-gray-400">
+        Kami menerima kritik dan saran dari Anda
+      </p>
     </div>
   </header>
 
   {{-- Main Content --}}
   <main>
     {{-- Contact Form & Info Section --}}
-
     <section class="container mx-auto px-4 my-16" id="contact-form-section">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         
         {{-- Contact Form --}}
         <div>
-          <div class="mx-auto max-w-3xl rounded-lg bg-white p-8 shadow-2xl">
+          <div class="mx-auto max-w-3xl rounded-lg bg-white p-8 shadow-2xl dark:bg-gray-800/25 dark:hover:shadow-lg dark:hover:shadow-blue-950/50">
             <div class="mb-6">
-              <h2 class="text-2xl font-bold text-gray-900">Kirim Pesan</h2>
-              <p class="mt-2 text-gray-600">Kritik dan saranmu sangat berarti bagi kami!</p>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Kirim Pesan</h2>
+              <p class="mt-2 text-gray-600 dark:text-gray-300">Kritik dan saranmu sangat berarti bagi kami!</p>
             </div>
+
             @if(session('success'))
-                <div class="mb-4 rounded-md bg-green-50 p-4">
+                <div class="mb-4 rounded-md bg-green-50 p-4 dark:bg-green-900">
                     <div class="flex">
                         <div class="flex-shrink-0">
                             ✅
                         </div>
                         <div class="ml-3">
-                            <p class="text-sm font-medium text-green-800">
+                            <p class="text-sm font-medium text-green-800 dark:text-green-400">
                                 {{ session('success') }}
                             </p>
                         </div>
@@ -45,44 +49,44 @@
             @endif
 
             @if(session('error'))
-                <div class="mb-4 rounded-md bg-red-50 p-4">
+                <div class="mb-4 rounded-md bg-red-50 p-4 dark:bg-red-900">
                     <div class="flex">
                         <div class="flex-shrink-0">
                             ❌
                         </div>
                         <div class="ml-3">
-                            <p class="text-sm font-medium text-red-800">
+                            <p class="text-sm font-medium text-red-800 dark:text-red-400">
                                 {{ session('error') }}
                             </p>
                         </div>
                     </div>
                 </div>
             @endif
-                        <form action="{{ route('contact.send') }}" method="POST" class="space-y-6"> 
-                    @csrf
-                    
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
-                        <input type="text" name="name" id="name" required
-                        class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm">
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" name="email" id="email" required
-                        class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm">
-                    </div>
-                    
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700">Pesan</label>
-                        <textarea name="message" id="message" rows="4" required
-                        class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 px-3 py-2 shadow-sm sm:text-sm"></textarea>
-                    </div>
-                    
-                    <button type="submit"
-                    class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700">
-                    Kirim Pesan
-                </button>
+
+            <form action="{{ route('contact.send') }}" method="POST" class="space-y-6"> 
+              @csrf
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nama</label>
+                <input type="text" name="name" id="name" required
+                  class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 px-3 py-2 shadow-sm sm:text-sm">
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                <input type="email" name="email" id="email" required
+                  class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 px-3 py-2 shadow-sm sm:text-sm">
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Pesan</label>
+                <textarea name="message" id="message" rows="4" required
+                  class="bg-inputcolor/15 focus:border-inputcolor focus:ring-inputcolor mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100 px-3 py-2 shadow-sm sm:text-sm"></textarea>
+              </div>
+              
+              <button type="submit"
+                class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 border border-gray-300/25  dark:bg-blue-700/25 dark:hover:bg-blue-900/25">
+                Kirim Pesan
+              </button>
             </form>
           </div>
         </div>  
@@ -123,12 +127,12 @@
           />
 
           {{-- Google Maps --}}
-          <div class="mx-auto mt-4 max-w-3xl rounded-lg bg-white p-8 shadow-2xl">
-            <h2 class="text-2xl font-bold text-gray-900">Lokasi Kami</h2>
+          <div class="mx-auto mt-4 max-w-3xl rounded-lg bg-white p-8 shadow-2xl dark:bg-gray-800/25 hover:shadow-lg hover:shadow-blue-950/50">
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100">Lokasi Kami</h2>
             <div class="mt-4">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.1160933372953!2d109.26389193515374!3d-7.698438457324463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e653f43ea3e7c15%3A0xd55bcf745515ee69!2sPantai%20Widarapayung!5e0!3m2!1sid!2sid!4v1757953313951!5m2!1sid!2sid"
-                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+                width="100%" height="300" style="border:0;" allowfullscreen loading="lazy" class="rounded-lg">
               </iframe>
             </div>
           </div>
@@ -136,11 +140,9 @@
       </div>
     </section>
 
-
     {{-- FAQ Section --}}
-
     <section class="container mx-auto px-4 my-16">
-      <h2 class="text-center text-2xl font-bold text-gray-900 mb-10">Pertanyaan yang Sering Diajukan</h2>
+      <h2 class="text-center text-2xl font-bold text-gray-900 dark:text-gray-100 mb-10">Pertanyaan yang Sering Diajukan</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
         <div class="space-y-6">

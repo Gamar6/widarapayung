@@ -11,7 +11,7 @@ class VirtualTourController extends Controller
         // Contoh scenes statis (bisa disimpan ke DB nanti)
         $scenes = [
             'scene1' => [
-                'title' => '1',
+                'title' => 'Gapura Widarapayung',
                 'panorama' => asset('img/360/scene1.jpg'),
                 'important' => true,
                 'hfov' => 150,
@@ -29,7 +29,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene2' => [
-                'title' => '2',
+                'title' => 'WidaraPayung 2',
                 'panorama' => asset('img/360/scene2.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -52,7 +52,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene3' => [
-                'title' => '3',
+                'title' => 'WidaraPayung 3',
                 'panorama' => asset('img/360/scene3.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -75,7 +75,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene4' => [
-                'title' => '4',
+                'title' => 'WidaraPayung 4',
                 'panorama' => asset('img/360/scene4.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -98,7 +98,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene5' => [
-                'title' => '5',
+                'title' => 'WidaraPayung 5',
                 'panorama' => asset('img/360/scene5.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -121,7 +121,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene6' => [
-                'title' => '6',
+                'title' => 'WidaraPayung 6',
                 'panorama' => asset('img/360/scene6.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -144,7 +144,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene7' => [
-                'title' => '7',
+                'title' => 'WidaraPayung 7',
                 'panorama' => asset('img/360/scene7.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -167,7 +167,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene8' => [
-                'title' => '8',
+                'title' => 'WidaraPayung 8',
                 'panorama' => asset('img/360/scene8.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -190,7 +190,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene9' => [
-                'title' => '9',
+                'title' => 'WidaraPayung 9',
                 'panorama' => asset('img/360/scene9.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -213,7 +213,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene10' => [
-                'title' => '10',
+                'title' => 'WidaraPayung 10',
                 'panorama' => asset('img/360/scene10.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -236,7 +236,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene11' => [
-                'title' => '11',
+                'title' => 'WidaraPayung 11',
                 'panorama' => asset('img/360/scene11.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -259,7 +259,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene12' => [
-                'title' => '12',
+                'title' => 'WidaraPayung 12',
                 'panorama' => asset('img/360/scene12.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -282,7 +282,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene13' => [
-                'title' => '13',
+                'title' => 'WidaraPayung 13',
                 'panorama' => asset('img/360/scene13.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -305,7 +305,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene14' => [
-                'title' => 'Pintu Masuk 1',
+                'title' => 'Pintu Masuk Widarapayung 1',
                 'panorama' => asset('img/360/scene14.jpg'),
                 'important' => true,
                 'hfov' => 150,
@@ -336,7 +336,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene15' => [
-                'title' => '15',
+                'title' => 'WidaraPayung 15',
                 'panorama' => asset('img/360/scene15.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -359,7 +359,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene16' => [
-                'title' => '16',
+                'title' => 'WidaraPayung 16',
                 'panorama' => asset('img/360/scene16.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -382,7 +382,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene17' => [
-                'title' => '17',
+                'title' => 'WidaraPayung 17',
                 'panorama' => asset('img/360/scene17.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -405,7 +405,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene18' => [
-                'title' => '18',
+                'title' => 'WidaraPayung 18',
                 'panorama' => asset('img/360/scene18.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -428,7 +428,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene19' => [
-                'title' => '19',
+                'title' => 'WidaraPayung 19',
                 'panorama' => asset('img/360/scene19.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -451,7 +451,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene20' => [
-                'title' => '20',
+                'title' => 'WidaraPayung 20',
                 'panorama' => asset('img/360/scene20.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -474,8 +474,9 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene21' => [                  // pintu masuk tengah
-                'title' => '21',
+                'title' => 'WidaraPayung 21',
                 'panorama' => asset('img/360/scene21.jpg'),
+                'important' => true,
                 'hfov' => 150,
                 'yaw' => 180,
                 'pitch' => 0,
@@ -504,7 +505,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene22' => [              // jalan kiri
-                'title' => '22',
+                'title' => 'WidaraPayung 22',
                 'panorama' => asset('img/360/scene22.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -527,7 +528,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene23' => [              // jalan kiri
-                'title' => '23',
+                'title' => 'WidaraPayung 23',
                 'panorama' => asset('img/360/scene23.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -550,7 +551,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene24' => [              // jalan kiri
-                'title' => '24',
+                'title' => 'WidaraPayung 24',
                 'panorama' => asset('img/360/scene24.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -573,7 +574,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene25' => [              // jalan kiri
-                'title' => '25',
+                'title' => 'WidaraPayung 25',
                 'panorama' => asset('img/360/scene25.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -596,7 +597,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene26' => [              // jalan kiri
-                'title' => '26',
+                'title' => 'WidaraPayung 26',
                 'panorama' => asset('img/360/scene26.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -619,7 +620,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene27' => [              // jalan kiri
-                'title' => '27',
+                'title' => 'WidaraPayung 27',
                 'panorama' => asset('img/360/scene27.jpg'),
                 'hfov' => 150,
                 'yaw' => 65,
@@ -643,7 +644,7 @@ class VirtualTourController extends Controller
             ],
             
             // 'scene28' => [              // jalan kiri
-            //     'title' => '28',
+            //     'title' => 'WidaraPayung 28',
             //     'panorama' => asset('img/360/scene28.jpg'),
             //     'hfov' => 150,
             //     'yaw' => 180,
@@ -667,7 +668,7 @@ class VirtualTourController extends Controller
             // ],
 
             'scene29' => [              // jalan kiri
-                'title' => '29',
+                'title' => 'WidaraPayung 29',
                 'panorama' => asset('img/360/scene29.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -690,7 +691,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene30' => [              // jalan kiri
-                'title' => '30',
+                'title' => 'Pintu Masuk Widarapayung 2',
                 'panorama' => asset('img/360/scene30.jpg'),
                 'hfov' => 150,
                 'yaw' => 90,
@@ -713,7 +714,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene31' => [              // jalan kiri
-                'title' => '31',
+                'title' => 'WidaraPayung 31',
                 'panorama' => asset('img/360/scene31.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -736,7 +737,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene32' => [              // jalan kiri
-                'title' => '32',
+                'title' => 'WidaraPayung 32',
                 'panorama' => asset('img/360/scene32.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -759,7 +760,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene33' => [              // jalan kiri
-                'title' => '33',
+                'title' => 'WidaraPayung 33',
                 'panorama' => asset('img/360/scene33.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -782,7 +783,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene34' => [
-                'title' => '34',
+                'title' => 'WidaraPayung 34',
                 'panorama' => asset('img/360/scene34.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -805,7 +806,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene35' => [
-                'title' => '35',
+                'title' => 'WidaraPayung 35',
                 'panorama' => asset('img/360/scene35.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -828,7 +829,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene36' => [
-                'title' => '36',
+                'title' => 'WidaraPayung 36',
                 'panorama' => asset('img/360/scene36.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -851,8 +852,9 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene37' => [          // papan PIW
-                'title' => '37',
+                'title' => 'Ikon Pantai WidaraPayung',
                 'panorama' => asset('img/360/scene37.jpg'),
+                'important' => true,
                 'hfov' => 150,
                 'yaw' => 105,
                 'pitch' => 0,
@@ -888,7 +890,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene38' => [
-                'title' => '38',
+                'title' => 'WidaraPayung 38',
                 'panorama' => asset('img/360/scene42.jpg'),
                 'hfov' => 150,
                 'yaw' => 270,
@@ -928,7 +930,7 @@ class VirtualTourController extends Controller
 
             // area pantai
             'scene39' => [
-                'title' => '39',
+                'title' => 'WidaraPayung 39',
                 'panorama' => asset('img/360/pantai (3).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -951,7 +953,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene40' => [
-                'title' => '40',
+                'title' => 'WidaraPayung 40',
                 'panorama' => asset('img/360/pantai (4).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -974,7 +976,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene41' => [
-                'title' => '41',
+                'title' => 'WidaraPayung 41',
                 'panorama' => asset('img/360/pantai (5).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -997,7 +999,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene42' => [
-                'title' => '42',
+                'title' => 'WidaraPayung 42',
                 'panorama' => asset('img/360/pantai (6).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1020,7 +1022,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene43' => [
-                'title' => '43',
+                'title' => 'WidaraPayung 43',
                 'panorama' => asset('img/360/pantai (7).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1043,7 +1045,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene44' => [
-                'title' => '44',
+                'title' => 'WidaraPayung 44',
                 'panorama' => asset('img/360/pantai (8).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1066,7 +1068,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene45' => [
-                'title' => '45',
+                'title' => 'WidaraPayung 45',
                 'panorama' => asset('img/360/pantai (9).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1089,7 +1091,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene46' => [
-                'title' => '46',
+                'title' => 'WidaraPayung 46',
                 'panorama' => asset('img/360/pantai (10).jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1108,7 +1110,7 @@ class VirtualTourController extends Controller
 
             // Kanan
             'scene47' => [
-                'title' => '47',
+                'title' => 'WidaraPayung 47',
                 'panorama' => asset('img/360/scene41.jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1131,7 +1133,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene48' => [
-                'title' => '48',
+                'title' => 'WidaraPayung 48',
                 'panorama' => asset('img/360/scene40.jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1154,7 +1156,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene49' => [
-                'title' => '49',
+                'title' => 'WidaraPayung 49',
                 'panorama' => asset('img/360/scene39.jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1177,7 +1179,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene50' => [
-                'title' => '50',
+                'title' => 'WidaraPayung 50',
                 'panorama' => asset('img/360/scene38.jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1196,7 +1198,7 @@ class VirtualTourController extends Controller
 
             // Kiri
             'scene51' => [
-                'title' => '51',
+                'title' => 'WidaraPayung 51',
                 'panorama' => asset('img/360/scene43.jpg'),
                 'hfov' => 150,
                 'yaw' => 40,
@@ -1219,7 +1221,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene52' => [
-                'title' => '52',
+                'title' => 'WidaraPayung 52',
                 'panorama' => asset('img/360/scene44.jpg'),
                 'hfov' => 150,
                 'yaw' => 176,
@@ -1242,7 +1244,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene53' => [
-                'title' => '53',
+                'title' => 'WidaraPayung 53',
                 'panorama' => asset('img/360/scene45.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1265,7 +1267,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene54' => [
-                'title' => '54',
+                'title' => 'WidaraPayung 54',
                 'panorama' => asset('img/360/scene46.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1288,7 +1290,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene55' => [
-                'title' => '55',
+                'title' => 'WidaraPayung 55',
                 'panorama' => asset('img/360/scene47.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1311,7 +1313,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene56' => [
-                'title' => '56',
+                'title' => 'WidaraPayung 56',
                 'panorama' => asset('img/360/scene48.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1336,7 +1338,7 @@ class VirtualTourController extends Controller
 
 
             'scene57' => [          // bagian anomali
-                'title' => '57',
+                'title' => 'WidaraPayung 57',
                 'panorama' => asset('img/360/scene49.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1359,7 +1361,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene58' => [
-                'title' => '58',
+                'title' => 'WidaraPayung 58',
                 'panorama' => asset('img/360/scene50.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1382,7 +1384,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene59' => [
-                'title' => '59',
+                'title' => 'WidaraPayung 59',
                 'panorama' => asset('img/360/scene51.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1405,7 +1407,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene60' => [
-                'title' => '60',
+                'title' => 'WidaraPayung 60',
                 'panorama' => asset('img/360/scene52.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1428,7 +1430,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene61' => [
-                'title' => '61',
+                'title' => 'WidaraPayung 61',
                 'panorama' => asset('img/360/scene53.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1451,7 +1453,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene62' => [
-                'title' => '62',
+                'title' => 'WidaraPayung 62',
                 'panorama' => asset('img/360/scene54.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1474,7 +1476,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene63' => [
-                'title' => '63',
+                'title' => 'WidaraPayung 63',
                 'panorama' => asset('img/360/scene55.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1497,7 +1499,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene64' => [
-                'title' => '64',
+                'title' => 'WidaraPayung 64',
                 'panorama' => asset('img/360/scene56.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1520,7 +1522,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene65' => [
-                'title' => '65',
+                'title' => 'WidaraPayung 65',
                 'panorama' => asset('img/360/scene57.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1543,7 +1545,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene66' => [
-                'title' => '66',
+                'title' => 'WidaraPayung 66',
                 'panorama' => asset('img/360/scene58.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1566,7 +1568,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene67' => [
-                'title' => '67',
+                'title' => 'WidaraPayung 67',
                 'panorama' => asset('img/360/scene59.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1589,7 +1591,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene68' => [
-                'title' => '68',
+                'title' => 'WidaraPayung 68',
                 'panorama' => asset('img/360/scene60.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1612,7 +1614,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene69' => [
-                'title' => '69',
+                'title' => 'WidaraPayung 69',
                 'panorama' => asset('img/360/scene61.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1635,7 +1637,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene70' => [
-                'title' => '70',
+                'title' => 'WidaraPayung 70',
                 'panorama' => asset('img/360/scene62.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1658,7 +1660,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene71' => [
-                'title' => '71',
+                'title' => 'WidaraPayung 71',
                 'panorama' => asset('img/360/scene63.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1681,7 +1683,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene72' => [
-                'title' => '72',
+                'title' => 'WidaraPayung 72',
                 'panorama' => asset('img/360/scene64.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1704,7 +1706,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene73' => [
-                'title' => '73',
+                'title' => 'WidaraPayung 73',
                 'panorama' => asset('img/360/scene65.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1731,7 +1733,7 @@ class VirtualTourController extends Controller
 
 
             'scene74' => [              // jalan pojok kiri
-                'title' => '74',
+                'title' => 'WidaraPayung 74',
                 'panorama' => asset('img/360/scene66.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1754,7 +1756,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene75' => [
-                'title' => '75',
+                'title' => 'WidaraPayung 75',
                 'panorama' => asset('img/360/scene67.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1784,7 +1786,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene76' => [
-                'title' => '76',
+                'title' => 'WidaraPayung 76',
                 'panorama' => asset('img/360/scene69.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1807,7 +1809,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene77' => [
-                'title' => '77',
+                'title' => 'WidaraPayung 77',
                 'panorama' => asset('img/360/scene70.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1830,7 +1832,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene78' => [
-                'title' => '78',
+                'title' => 'WidaraPayung 78',
                 'panorama' => asset('img/360/scene71.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1853,7 +1855,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene79' => [
-                'title' => '79',
+                'title' => 'WidaraPayung 79',
                 'panorama' => asset('img/360/scene72.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1876,7 +1878,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene80' => [
-                'title' => '80',
+                'title' => 'WidaraPayung 80',
                 'panorama' => asset('img/360/scene73.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1899,7 +1901,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene81' => [
-                'title' => '81',
+                'title' => 'WidaraPayung 81',
                 'panorama' => asset('img/360/scene74.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1922,7 +1924,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene82' => [
-                'title' => '82',
+                'title' => 'WidaraPayung 82',
                 'panorama' => asset('img/360/scene75.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1945,7 +1947,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene83' => [
-                'title' => '83',
+                'title' => 'WidaraPayung 83',
                 'panorama' => asset('img/360/scene76.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,
@@ -1968,7 +1970,7 @@ class VirtualTourController extends Controller
                 ],
             ],
             'scene84' => [
-                'title' => '84',
+                'title' => 'WidaraPayung 84',
                 'panorama' => asset('img/360/scene77.jpg'),
                 'hfov' => 150,
                 'yaw' => 180,

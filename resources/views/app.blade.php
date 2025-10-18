@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id" x-data="{ dark: localStorage.getItem('theme') === 'dark' }" :class="{ 'dark': dark }" class="scroll-smooth">
 
 <head>
   <meta charset="utf-8" />
@@ -52,7 +52,7 @@
   </style>
 </head>
 
-<body class="bg-white text-gray-900 antialiased">
+<body class="bg-white text-gray-900 dark:bg-gray-900 antialiased">
   @include('components.navbar')
 
   <main>

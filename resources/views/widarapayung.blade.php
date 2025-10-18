@@ -2,10 +2,10 @@
 <html lang="id">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Virtual Tour 360°</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />)
   <style>
     html,
     body {
@@ -39,35 +39,50 @@
     }
 
     .top-bar .btn {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.177);
       color: white;
       padding: 8px 12px;
       border-radius: 8px;
       cursor: pointer;
       border: none;
-      margin-right: 8px;
+      margin:10px;
+      margin-top:20px;
     }
 
-    .scene-title {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 8px 16px;
-      border-radius: 8px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    .navigation-controls {
+    /* BOTTOM NAVIGATION & CONTROLS */
+    .bottom-container {
       position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      bottom: 0;
+      width: 100%;
       pointer-events: auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
+      gap: 10px; 
+    }
+
+    .bottom-controls {
+      display: flex;
       gap: 10px;
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 10px 20px;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .ctrl-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .bottom-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 8px 16px;
       border-radius: 20px;
     }
 
@@ -79,39 +94,79 @@
       cursor: pointer;
     }
 
+    .scene-title-bottom {
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    /* Scene Indicators dengan scroll horizontal */
     .scene-indicators {
       position: absolute;
-      bottom: 60px;
+      bottom: 100px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
       gap: 6px;
       pointer-events: auto;
+      max-width: calc(10 * 40px);
+      /* 10 indikator x lebar lebih besar */
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 6px 8px;
+      border-radius: 12px;
+      background-color: rgba(0, 0, 0, 0.3);
+      -webkit-overflow-scrolling: touch;
     }
 
+    /* Ubah tampilan scrollbar agar lebih kecil */
+    .scene-indicators::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    .scene-indicators::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .scene-indicators::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.4);
+      border-radius: 4px;
+    }
+
+    /* Tombol indikator (dipanjangkan) */
     .scene-indicators button {
       height: 8px;
       border-radius: 999px;
       border: none;
       cursor: pointer;
       transition: all 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.4);
+      width: 20px;
+      flex-shrink: 0;
     }
 
     .scene-indicators button.active {
-      width: 30px;
+      width: 50px;
       background-color: #0ea5e9;
     }
 
     .scene-indicators button.inactive {
-      width: 8px;
+      width: 20px;
       background-color: rgba(255, 255, 255, 0.4);
     }
 
+    .pnlm-title,
     .pnlm-about-msg,
-    .pnlm-load-box {
+    .pnlm-load-box,
+    .pnlm-controls {
       display: none !important;
     }
 
+    .menuburger {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+    }
     /* Sidebar */
     #sidebar {
       position: fixed;
@@ -171,25 +226,65 @@
       background-color: rgba(255, 255, 255, 0.2);
     }
 
-    #quickSpots {
-      bottom: 120px;
-      flex-wrap: wrap;
-      justify-content: center;
+    .bottom-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      pointer-events: auto;
     }
 
-    #quickSpots button {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 14px;
-      transition: background-color 0.3s ease;
+    .bottom-bg {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #023c4ddd;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px; 
     }
 
-    #quickSpots button:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+
+    .iconImg {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) invert(1);
+    }
+    
+    .iconImg:hover {
+      transform: scale(1.2);
+    }
+
+    .iconplayImg {
+      width: 17px;
+      height: 17px;
+      filter: brightness(0) invert(1);
+    }
+
+    .iconplayImg:hover {
+      transform: scale(1.2);
+    }
+
+    .iconexpandImg {
+      width: 16px;
+      height: 16px;
+      filter: brightness(0) invert(1);
+    }
+
+    .iconexpandImg:hover {
+      transform: scale(1.2);
+    }
+
+    .iconarrowImg {
+      width: 23px;
+      height: 23px;
+      filter: brightness(0) invert(1);
+    }
+
+    .iconarrowImg:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
@@ -208,40 +303,51 @@
     <!-- Top bar -->
     <div class="top-bar">
       <div>
-        <button class="btn" onclick="toggleSidebar()">☰</button>
-        <button class="btn" onclick="window.location.href='{{ url('/virtual-tour') }}'">← Kembali</button>
+        <button class="btn" onclick="toggleSidebar()"><img src="/img/menu-burger.svg" alt="sidebar menu" class="menuburger"></button>
+
       </div>
-      <div class="scene-title" id="sceneTitle">Virtual Tour</div>
-      <div>
-        <button class="btn" onclick="toggleAutorotate()" id="autorotateBtn">⏯️</button>
-        <button class="btn" onclick="toggleFullscreen()">⛶</button>
-      </div>
+      <div></div>
+      <div></div>
     </div>
 
-    <!-- Navigation controls -->
-    <div class="navigation-controls">
-      <button class="nav-btn" onclick="goPrev()">⟨</button>
-      <div style="color:white;" id="sceneIndexText">1 / N</div>
-      <button class="nav-btn" onclick="goNext()">⟩</button>
+    <!-- Bottom controls -->
+    <div class="bottom-container">
+      <div class="bottom-bg">
+        <div class="bottom-controls">
+          <button class="ctrl-btn" title="kembali ke halaman sebelumnya"
+            onclick="window.location.href='{{ url('/virtual-tour') }}'"><img src="/img/arrow-small-left.svg"
+              alt="eye" class="iconarrowImg"></button>
+          <button class="ctrl-btn" title="full screen" onclick="toggleFullscreen()"><img src="/img/expand.svg"
+              alt="expand" class="iconexpandImg"></button>
+          <button class="ctrl-btn" title="play auto-rotate" onclick="toggleAutorotate()" id="autorotateBtn"><img
+              src="/img/play.svg" alt="play" class="iconplayImg"></button>
+          <button class="ctrl-btn" title="show hotspot" onclick="toggleHotspots()" id="hotspotBtn"><img
+              src="/img/eye.svg" alt="eye" class="iconImg"></button>
+        </div>
+        <div class="bottom-nav">
+          <button class="nav-btn" onclick="goPrev()">⟨</button>
+          <div class="scene-title-bottom" id="sceneTitleBottom">Virtual Tour</div>
+          <button class="nav-btn" onclick="goNext()">⟩</button>
+        </div>
+      </div>
     </div>
-
-    <!-- Quick Spots -->
-    <div class="scene-indicators" id="quickSpots"></div>
-
-    <!-- Scene Indicators -->
-    <div class="scene-indicators" id="sceneIndicators"></div>
   </div>
 
-  <!-- Pannellum -->
-  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <!-- Scene Indicators -->
+  <div class="scene-indicators" id="sceneIndicators"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
   <script>
+    // Contoh data scenes dan firstScene (gantikan dengan data nyata dari backend)
     const scenes = @json($scenes);
     const firstScene = @json($firstScene);
 
     const sceneIds = Object.keys(scenes);
     let currentSceneIndex = sceneIds.indexOf(firstScene);
     let viewer;
+    let hotspotsVisible = true;
+
+    const MAX_VISIBLE_INDICATORS = 10;
 
     const loadScene = (sceneId) => {
       viewer.loadScene(sceneId);
@@ -250,8 +356,8 @@
     };
 
     const updateSceneInfo = () => {
-      document.getElementById('sceneTitle').textContent = scenes[sceneIds[currentSceneIndex]].title || 'Virtual Tour';
-      document.getElementById('sceneIndexText').textContent = `${currentSceneIndex + 1} / ${sceneIds.length}`;
+      const current = scenes[sceneIds[currentSceneIndex]];
+      document.getElementById('sceneTitleBottom').textContent = current.title || 'Virtual Tour';
       updateIndicators();
     };
 
@@ -266,18 +372,32 @@
     const toggleAutorotate = () => {
       if (viewer.getConfig().autoRotate) {
         viewer.stopAutoRotate();
-        document.getElementById('autorotateBtn').textContent = '▶️';
+        document.getElementById('autorotateBtn').innerHTML =
+          '<img src="/img/play.svg" title="play auto-rotate" alt="Visible" class="iconplayImg">';
       } else {
         viewer.startAutoRotate();
-        document.getElementById('autorotateBtn').textContent = '⏸️';
+        document.getElementById('autorotateBtn').innerHTML =
+          '<img src="/img/pause.svg" title="stop auto-rotate" alt="Visible" class="iconplayImg">';
       }
     };
 
     const toggleFullscreen = () => viewer.toggleFullscreen();
 
+    const toggleHotspots = () => {
+      hotspotsVisible = !hotspotsVisible;
+      const hs = document.querySelectorAll('.pnlm-hotspot');
+      hs.forEach(el => el.style.display = hotspotsVisible ? 'block' : 'none');
+
+      const iconHTML = hotspotsVisible ?
+        `<img src="/img/eye.svg" title="show hotspot" alt="Visible" class="iconImg">` :
+        `<img src="/img/eye-crossed.svg" title="hide hotspot" alt="Hidden" class="iconImg">`;
+
+      document.getElementById('hotspotBtn').innerHTML = iconHTML;
+    };
+
+
     const toggleSidebar = () => {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('open');
+      document.getElementById('sidebar').classList.toggle('open');
     };
 
     const createIndicators = () => {
@@ -287,16 +407,25 @@
         const btn = document.createElement('button');
         btn.className = idx === currentSceneIndex ? 'active' : 'inactive';
         btn.onclick = () => loadScene(id);
+        btn.dataset.idx = idx; // simpan index untuk referensi scroll
         container.appendChild(btn);
       });
     };
 
-    const createQuickSpots = () => {
-      // Kosong, supaya tombol quick spots tidak dibuat
-      const container = document.getElementById('quickSpots');
-      container.innerHTML = '';
-    };
+    const updateIndicators = () => {
+      const container = document.getElementById('sceneIndicators');
+      const buttons = container.children;
 
+      // Update class active/inactive
+      Array.from(buttons).forEach((btn, idx) => {
+        btn.className = idx === currentSceneIndex ? 'active' : 'inactive';
+      });
+
+      // Scroll ke indikator aktif supaya terlihat di tengah
+      const btnWidth = 36; // lebar tombol + gap perkiraan
+      const scrollPos = Math.max(0, (currentSceneIndex - Math.floor(MAX_VISIBLE_INDICATORS / 2)) * btnWidth);
+      container.scrollLeft = scrollPos;
+    };
 
     const createSidebarList = () => {
       const container = document.getElementById('sidebarList');
@@ -314,13 +443,6 @@
       });
     };
 
-    const updateIndicators = () => {
-      const buttons = document.getElementById('sceneIndicators').children;
-      Array.from(buttons).forEach((btn, idx) => {
-        btn.className = idx === currentSceneIndex ? 'active' : 'inactive';
-      });
-    };
-
     const pannellumScenes = {};
     sceneIds.forEach(sceneId => {
       const s = scenes[sceneId];
@@ -331,16 +453,13 @@
         hfov: s.hfov || 100,
         yaw: s.yaw || 0,
         pitch: s.pitch || 0,
-        hotSpots: (s.hotSpots || []).map(hs => {
-          const base = {
-            pitch: hs.pitch,
-            yaw: hs.yaw,
-            type: hs.type === "scene" ? "scene" : "info",
-            text: hs.text || ""
-          };
-          if (hs.type === "scene") base.sceneId = hs.sceneId;
-          return base;
-        })
+        hotSpots: (s.hotSpots || []).map(hs => ({
+          pitch: hs.pitch,
+          yaw: hs.yaw,
+          type: hs.type === "scene" ? "scene" : "info",
+          text: hs.text || "",
+          sceneId: hs.sceneId || null
+        }))
       };
     });
 
@@ -348,7 +467,8 @@
       default: {
         firstScene: firstScene,
         sceneFadeDuration: 1000,
-        autoLoad: true
+        autoLoad: true,
+        showControls: false
       },
       scenes: pannellumScenes
     });
@@ -359,7 +479,6 @@
     });
 
     createIndicators();
-    createQuickSpots();
     createSidebarList();
     updateSceneInfo();
   </script>

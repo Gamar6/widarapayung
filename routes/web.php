@@ -26,7 +26,7 @@ Route::get('/virtual-tour', function () {
             'gambar' => '/img/spot/spot-gapura.jpg',
             'panorama' => '/img/360/scene1.jpg', // gambar panorama 360
             'scene' => 'scene1',
-            'highlight' => ['Sunset', 'Pantai Luas', 'Spot Foto'],
+            'highlight' => ['Navigasi', 'Perjalanan', 'Spot Foto'],
         ],
         [
             'nama' => 'Pintu Masuk 1',
@@ -34,6 +34,30 @@ Route::get('/virtual-tour', function () {
             'gambar' => '/img/spot/pintumasuk-1.jpg',
             'panorama' => '/img/360/scene14.jpg', // gambar panorama 360
             'scene' => 'scene14',
+            'highlight' => ['Perjalanan', 'Pintu Masuk', 'Spot Foto'],
+        ],
+        [
+            'nama' => 'Pintu Masuk 2',
+            'lokasi' => 'Cilacap, Jawa Tengah',
+            'gambar' => '/img/360/scene30.jpg',
+            'panorama' => '/img/360/scene30.jpg', // gambar panorama 360
+            'scene' => 'scene30',
+            'highlight' => ['Perjalanan', 'Pintu Masuk', 'Spot Foto'],
+        ],
+        [
+            'nama' => 'Ikon Pantai Indah WidaraPayung',
+            'lokasi' => 'Cilacap, Jawa Tengah',
+            'gambar' => '/img/360/scene37.jpg',
+            'panorama' => '/img/360/scene37.jpg', // gambar panorama 360
+            'scene' => 'scene37',
+            'highlight' => ['Sunset', 'Pantai Luas', 'Spot Foto'],
+        ],
+        [
+            'nama' => 'View Pantai Indah Widarapayung',
+            'lokasi' => 'Cilacap, Jawa Tengah',
+            'gambar' => '/img/360/scene44.jpg',
+            'panorama' => '/img/360/scene44.jpg', // gambar panorama 360
+            'scene' => 'scene44',
             'highlight' => ['Sunset', 'Pantai Luas', 'Spot Foto'],
         ],
     ];
